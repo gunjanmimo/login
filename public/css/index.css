@@ -1,0 +1,9 @@
+.button {
+    position: absolute;
+    left: 40%;
+}
+
+#btn {
+    margin-top: 40px;
+    margin-right: 40px;
+}
