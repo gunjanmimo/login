@@ -24,6 +24,14 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
+
+
+
+
+
+
+
+
 // google oauth
 passport.use(new GoogleStrategy({
     clientID: keys.googleClientID,
@@ -51,6 +59,10 @@ app.get("/auth/google/callback", passport.authenticate("google", {
     scope: ['profile', 'email']
 }))
 
+
+
+
+//facebook oauth
 
 
 app.get('', (req, res) => {
